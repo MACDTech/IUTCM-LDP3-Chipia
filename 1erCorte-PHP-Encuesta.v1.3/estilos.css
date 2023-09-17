@@ -1,0 +1,18 @@
+.Encuesta {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+.Encuesta {
+    margin-right: 15px;
+}
+
+.Encuesta :last-child {
+    margin-right: 0px;
+}
+
+.FormInput {
+    display: grid;
+    justify-content: center;
+}
