@@ -17,10 +17,6 @@ function filtro_vacio($datos) {
     return $datos;
 }
 
-function filtro_opciones_vacio($datos) {
-    
-}
-
 function apreciacion($datos) {
     if ($datos >= 14) {
         echo "<fieldset>Apreciacion del cliente: Buena <br> El cliente esta satisfecho con todos los aspectos de la experiencia</fieldset>";
