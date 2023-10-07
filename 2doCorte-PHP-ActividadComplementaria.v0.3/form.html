@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Asignacion complementaria - Manuel Chipia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f9f9f9;
+            }
+
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .form-wrapper {
+                max-width: 500px;
+                margin: 0 auto;
+                background-color: #ffffff;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                padding: 20px;
+            }
+
+            .form-wrapper legend {
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+
+            .form-wrapper h3 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .form-wrapper hr {
+                border: none;
+                border-top: 1px solid #ccc;
+                margin-bottom: 20px;
+            }
+
+            .form-wrapper ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            .form-wrapper ul li {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+            }
+
+            .form-wrapper label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .form-wrapper input[type="text"],
+            .form-wrapper input[type="email"],
+            .form-wrapper input[type="tel"] {
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+
+            .form-wrapper button {
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .form-wrapper button:hover {
+                background-color: #45a049;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .form-wrapper .error {
+                color: red;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+
+            .form-wrapper input:invalid {
+                border: 1px solid red;
+            }
+
+            .form-wrapper input:valid {
+                border: 1px solid #ccc;
+            }
+
+            .form-wrapper .success-message {
+                text-align: center;
+                color: green;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-wrapper" action="#" method="post">
+                <fieldset>
+                    <legend>Formulario</legend>
+                    <h3>Ingrese sus datos</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <label for="nombre">Nombre:</label>
+                            <input id="nombre" name="nombre" type="text" required>
+                            <div class="error">Ingrese su nombre.</div>
+                        </li>
+                        <li>
+                            <label for="apellido">Apellido:</label>
+                            <input id="apellido" name="apellido" type="text" required>
+                            <div class="error">Ingrese su apellido.</div>
+                        </li>
+                        <li>
+                            <label for="correo">Correo Electrónico:</label>
+                            <input id="correo" name="correo" type="email" required>
+                            <div class="error">Ingrese un correo válido.</div>
+                        </li>
+                        <li>
+                            <label for="telefono">Nro. de teléfono:</label>
+                            <input id="telefono" name="telefono" type="tel" required>
+                            <div class="error">Ingrese un número de teléfono válido.</div>
+                        </li>
+                    </ul>
+                    <button type="submit">Enviar</button>
+                    <div class="success-message">¡Formulario enviado con éxito!</div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
